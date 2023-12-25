@@ -193,14 +193,8 @@ function removeLastOccurrences(str, value) {
  *   sumOfCodes('') => 0
  *   sumOfCodes() => 0
  */
-function sumOfCodes(str) {
-  let sum = 0;
-  for (let i = 0; i < str.length; ) {
-    sum += str.charAt[i];
-    i += 1;
-  }
-
-  return sum;
+function sumOfCodes(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -330,10 +324,8 @@ function countVowels(str) {
  *   isPalindrome('apple') => false
  *   isPalindrome('No lemon, no melon') => true
  */
-function isPalindrome(str) {
-  const str1 = str.split('').reverse().join('');
-  const result = isBoolean(str === str1);
-  return result;
+function isPalindrome(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
@@ -442,8 +434,8 @@ function unbracketTag(str) {
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
  */
-function extractEmails(str) {
-  return str.replace(';', ',\n');
+function extractEmails(/* str */) {
+  throw new Error('Not implemented');
 }
 
 /**
