@@ -1,5 +1,4 @@
 module.exports = {
-  root: true,
   env: {
     commonjs: true,
     es6: true,
