@@ -5,8 +5,6 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-const isBoolean = require('is-boolean-object');
-
 /**
  * Returns the length of the given string.
  *
@@ -133,14 +131,8 @@ function removeTrailingWhitespaces(value) {
  *   repeatString('', 3) => ''
  *   repeatString('abc', -2) => ''
  */
-function repeatString(str, times) {
-  let result;
-  if (isBoolean(typeof str === 'string') && times > 0) {
-    result = str.repeat(times);
-  } else {
-    result = '';
-  }
-  return result;
+function repeatString(/* str, times */) {
+  throw new Error('Not implemented');
 }
 
 /**
